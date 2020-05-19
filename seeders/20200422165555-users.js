@@ -9,7 +9,7 @@ module.exports = {
     address: 'direccion 202',
     phone_number: '2223333',
     password: bcrypt.hashSync('123456', 10),
-    is_admin: true
+    is_admin: 1
   },
   {
     username: 'dogglover',
@@ -19,7 +19,7 @@ module.exports = {
     address: 'Kulas Light Apt. 556',
     phone_number: '2223333',
     password: bcrypt.hashSync('17707368031', 10),
-    is_admin: false
+    is_admin: 0
   }], {}),
   down: (queryInterface, Sequelize) => queryInterface.bulkDelete('Users', null, {}),
 }
