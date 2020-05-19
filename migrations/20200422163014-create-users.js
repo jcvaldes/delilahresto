@@ -38,7 +38,7 @@ module.exports = {
     },
     is_admin: {
       type: Sequelize.INTEGER,
-      defaultValue: false
+      defaultValue: 0
     },
     createdAt: {
       type: Sequelize.DATE,
