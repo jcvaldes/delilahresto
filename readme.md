@@ -18,20 +18,22 @@ cd delilahresto
 npm i
 ```
 
-4- Crear una base de datos en el servidor local ej: delilahresto
+4- Crear una base de datos en el servidor local ej: delilahresto_development
 
-5- Ejecutar la migración para crear la base de datos
-```
- npx sequelize-cli db:migrate
-```
-6- Ejecutar seeders
-```
- npx sequelize-cli db:seed:all
-```
+5- Queries de creación de base de datos e inicialización
 
-Con los comandos especificados anteriormente bastan para crear automaticamente la base de datos y llenar las tablas con datos dummy.
+Se adicionó los queries para crear la base de datos e inicializarla en el archivo resources/dbCreators.sql
 
-Adicionalmente se creo la estructura de la base de datos en el archivo resources/delilahresto.sql con los queries para crear la base de datos e inicializar la misma
+Otra forma de crear las tablas es a través de las migraciones de la siguiente manera-
+
+Ejecutar la migración para crear las tablas
+```
+npx sequelize-cli db:migrate
+```
+Ejecutar seeders para inicializar las tablas con datos dummy
+```
+npx sequelize-cli db:seed:all
+```
 
 7- La configución de la base de datos se encuentra en el archivo config/config.json y se debe configurar los parametros correspondientes a la base de datos ej:
 
@@ -44,8 +46,7 @@ Adicionalmente se creo la estructura de la base de datos en el archivo resources
 
 ## Documentación de los endpoints:
 
-Publicado en: https://documenter.getpostman.com/view/10614879/SzmfYcfu?version=latest
-
+Publicado en: https://documenter.getpostman.com/view/10614879/Szt5fqxk?version=latest
 y se adiciono el archivo resources/delilahresto_development.postman_collection.json para importar en el postman
 
 ## Iniciar proyecto con sequelize

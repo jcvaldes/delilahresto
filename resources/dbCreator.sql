@@ -1,15 +1,16 @@
-create database delilahresto_development;
-use delilahresto_development;
+
+--  Create database
+CREATE DATABASE  IF NOT EXISTS `delilahresto_development`;
+USE `delilahresto_development`;
 
 create table Products
 (
-    id            int auto_increment
-        primary key,
+    id            int auto_increment primary key,
     product_name  varchar(255)                           null,
     product_price decimal(10, 2)                         null,
     product_photo varchar(255)                           null,
-    createdAt     datetime default '2020-05-19 14:31:04' not null,
-    updatedAt     datetime default '2020-05-19 14:31:04' not null,
+    createdAt     datetime                               not null,
+    updatedAt     datetime                               not null,
     deletedAt     datetime                               null
 );
 
@@ -35,8 +36,8 @@ create table Users
     address      varchar(200)                           not null,
     phone_number varchar(20)                            not null,
     is_admin     int      default 0                     null,
-    createdAt    datetime default '2020-05-19 14:31:04' not null,
-    updatedAt    datetime default '2020-05-19 14:31:04' not null,
+    createdAt    datetime                                not null,
+    updatedAt    datetime                                not null,
     deletedAt    datetime                               null,
     constraint email
         unique (email),
@@ -49,13 +50,13 @@ create table Orders
     id                int auto_increment
         primary key,
     UserId            int                                    not null,
-    order_status      varchar(15)                            not null,
-    order_time        datetime default '2020-05-19 14:31:04' not null,
-    order_description varchar(100)                           not null,
-    order_amount      varchar(255)                           not null,
-    payment_method    varchar(15)                            not null,
-    createdAt         datetime default '2020-05-19 14:31:04' not null,
-    updatedAt         datetime default '2020-05-19 14:31:04' not null,
+    order_status enum('new','confirmed','preparing','delivering','delivered') NOT NULL DEFAULT 'new',
+    order_time        datetime not null,
+    order_description varchar(100) not null,
+    order_amount      varchar(255) not null,
+    payment_method    varchar(15)  not null,
+    createdAt         datetime not null,
+    updatedAt         datetime not null,
     deletedAt         datetime                               null,
     constraint fk_orders_userId
         foreign key (UserId) references Users (id)
