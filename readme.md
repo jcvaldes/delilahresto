@@ -40,8 +40,11 @@ npx sequelize-cli db:seed:all
     "username": "root",
     "password": "secret",
     "database": "delilahresto_development",
-    "host": "172.17.0.3"
+    "host": "localhost"
 
+8- El deploy se encuentra deployado en heroku en la siguiente url
+
+https://delilahresto2020.herokuapp.com/
 
 
 ## Documentación de los endpoints:
