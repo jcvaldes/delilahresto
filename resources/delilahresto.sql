@@ -1,5 +1,5 @@
-create database delilahresto;
-use delilahresto;
+create database delilahresto_development;
+use delilahresto_development;
 
 create table Products
 (
