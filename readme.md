@@ -31,7 +31,7 @@ npm i
 
 Con los comandos especificados anteriormente bastan para crear automaticamente la base de datos y llenar las tablas con datos dummy.
 
-Adicionalmente se creo la estructura de la base de datos en el archivo resources/delilahresto.sql
+Adicionalmente se creo la estructura de la base de datos en el archivo resources/delilahresto.sql con los queries para crear la base de datos e inicializar la misma
 
 7- La configución de la base de datos se encuentra en el archivo config/config.json y se debe configurar los parametros correspondientes a la base de datos ej:
 
