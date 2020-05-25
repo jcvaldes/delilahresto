@@ -1,3 +1,6 @@
+create database delilahresto;
+use delilahresto;
+
 create table Products
 (
     id            int auto_increment
@@ -74,3 +77,14 @@ create table ProductOrders
     constraint fk_productOrders_productId
         foreign key (ProductId) references Products (id)
 );
+
+
+insert into Users (id, username, firstname, lastname, password, email, address, phone_number, is_admin, createdAt, updatedAt, deletedAt) values (1, 'sescobar', 'Sol', 'Escobar', '$2a$10$3OSdnlcbj8n1KJ1aLZeI2.E.XrfVG8MwAtRzf.3M.kaiI5elDQVXO', 'sescobar@gmail.com', 'direccion 202', 2223333, 1, '2020-05-19 18:27:41', '2020-05-19 18:27:41', null);
+insert into Users (id, username, firstname, lastname, password, email, address, phone_number, is_admin, createdAt, updatedAt, deletedAt) values (2, 'dogglover', 'Bret', 'Leanne', '$2a$10$.h.ZKcUmhhdjxeheBJyTDukFneu7aOKFo7Zh6nBGH2tE5lWJwKrbC', 'bret@yahoo.com', 'Kulas Light Apt. 556', 2223333, 0, '2020-05-19 18:27:41', '2020-05-19 18:27:41', null);
+insert into Users (id, username, firstname, lastname, password, email, address, phone_number, is_admin, createdAt, updatedAt, deletedAt) values (3, 'ironman', 'Tony', 'Stark', '$2a$10$1ccM51tfiHES6GsUv9T36e5zTxha7dbQh5rTKdasBw39JeUJIWThq', 'tony@strarkindustries.com', '9 de julio 222', 333939393, 1, '2020-05-19 18:27:30', '2020-05-19 18:27:30', null);
+
+insert into Products (id, product_name, product_price, product_photo, createdAt, updatedAt, deletedAt) values (1, 'Hamburguer Double XL', 290.00, 'https://www.themealdb.com/images/media/meals/qpqtuu1511386216.jpg', '2020-05-19 18:27:41', '2020-05-19 18:27:30', null);
+insert into Products (id, product_name, product_price, product_photo, createdAt, updatedAt, deletedAt) values (2, 'Dona', 100.00, 'https://www.themealdb.com/images/media/meals/4i5cnx1587672171.jpg', '2020-05-19 18:27:41', '2020-05-19 18:27:41', null);
+insert into Products (id, product_name, product_price, product_photo, createdAt, updatedAt, deletedAt) values (4, 'Hamburguer XL', 260.00, 'https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2006&q=80', '2020-05-19 18:27:30', '2020-05-19 18:27:30', null);
+
+
