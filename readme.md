@@ -180,10 +180,11 @@ VER -> https://www.youtube.com/watch?v=dw1y7qwNb4E
 12- Si uso postgres, configurar la cadena de conexion postgres devuelta en el config de la aplicacion
 
 13- git add .
-14- git push origin master
-15- git heroku master
+14- git commit -m "heroku config"
+15- git push origin master
+16- git push heroku master
 
-16- heroku run bash sirve para acceder a mi virtual de heroku donde esta alojado mi aplicacion a traves del 
+17- heroku run bash sirve para acceder a mi virtual de heroku donde esta alojado mi aplicacion a traves del 
 shell bash y se puede aplicar comandos de linux para ejecutar los seeders
      npx sequelize-cli db:seed:all
 
