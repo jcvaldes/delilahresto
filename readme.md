@@ -44,12 +44,13 @@ npx sequelize-cli db:seed:all
 
 8- El deploy se encuentra deployado en heroku en la siguiente url
 
-https://delilahresto2020.herokuapp.com/
+https://delilahresto.herokuapp.com/
 
 
 ## Documentación de los endpoints:
 
-Publicado en: https://documenter.getpostman.com/view/10614879/Szt5fqxk?version=latest
+Publicado en: https://documenter.getpostman.com/view/4860366/Szf9VSFd?version=latest
+
 y se adiciono el archivo resources/delilahresto_development.postman_collection.json para importar en el postman
 
 ## Iniciar proyecto con sequelize
