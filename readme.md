@@ -3,9 +3,9 @@
 
 Pasos requeridos:
 
-1- clonar repo: 
+1- clonar repo:
 ```
-git clone https://github.com/hongoatomic/delilahresto
+git clone https://github.com/jcvaldes/delilahresto.git
 ```
 
 2- Entrar a la carpeta 
@@ -21,10 +21,6 @@ npm i
 4- Crear una base de datos en el servidor local ej: delilahresto_development
 
 5- Queries de creación de base de datos e inicialización
-
-Se adicionó los queries para crear la base de datos e inicializarla en el archivo resources/dbCreators.sql
-
-Otra forma de crear las tablas es a través de las migraciones de la siguiente manera-
 
 Ejecutar la migración para crear las tablas
 ```
@@ -60,8 +56,6 @@ npm i -D -E sequelize-cli
 ```
 sequelize init
 ```
-
-
 
 ## crear migraciones
 
