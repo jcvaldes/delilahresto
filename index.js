@@ -32,7 +32,6 @@ app.use('/v1/orders', ordersRoutes)
 db.sequelize
   .sync()
   .then((data) => {
-    // console.log(data.config);
     console.log(`DB connection has been established successfully: \x1b[32m%s\x1b[0m`, 'online');
   })
   .catch((err) => {
